@@ -1,0 +1,124 @@
+<snippet>
+	<content><![CDATA[
+.field {
+  margin-bottom: 10px;
+}
+
+.field__part {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #acd872;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 15px 10px 15px 15px;
+  color: #000;
+  outline: none;
+}
+
+.field__part::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field__part::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field__part:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field__part::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field__select-wrap {
+  background: #fff;
+  position: relative;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 2px solid #acd872;
+}
+
+.field__arrow {
+  display: block;
+  width: 45px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  right: 0;
+}
+
+.field__arrow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #3a3a3a;
+}
+
+.field__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  text-indent: 0.01px;
+  background: transparent;
+  text-overflow: '';
+  position: relative;
+  cursor: pointer;
+  border: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field__select::-ms-expand {
+  display: none;
+}
+
+.field__row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.field__row .field__text {
+  width: 60%;
+  display: table-cell;
+}
+
+.field__row .field__number {
+  text-align: right;
+  width: 40%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.field__row:last-child .field__label {
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-form</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css</scope>
+</snippet>

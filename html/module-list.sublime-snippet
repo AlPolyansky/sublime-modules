@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+<ul class="list">
+  <li class="list__item">
+    <div class="list__grid">
+      <div class="list__part">
+      	<!-- первая колонка -->
+      </div>
+      <div class="list__part">
+      	<!-- вторая колонка -->
+      </div>
+    </div>
+  </li>
+</ul>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-list</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[
+.round {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #333;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+}
+
+.round__inner {
+  display: table;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background: no-repeat center / cover;
+  border: 2px solid red;
+  -webkit-border-radius: inherit;
+          border-radius: inherit;
+}
+
+.round__ico {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+}
+
+.round__num {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 52px;
+  color: #333;
+}
+
+.round__num:before {
+  content: "" counter(items) "";
+  display: block;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-round</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+picture.prod
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  source.prod__img(srcset='img/prod.png', media='(max-width: 991px)')
+  source.prod__img(srcset='img/desktop/prod.png')
+  <!--[if IE 9]></video><![endif]-->
+  img(srcset='img/desktop/prod.png')
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-picture</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.pug</scope>
+</snippet>

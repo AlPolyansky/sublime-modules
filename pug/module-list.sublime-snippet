@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+ul.list
+	li.list__item
+		.list__grid
+			.list__part
+				//- Ваш контент в первой колонке
+			.list__part
+				//- Ваш контент во второй колонке
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-list</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.pug</scope>
+</snippet>

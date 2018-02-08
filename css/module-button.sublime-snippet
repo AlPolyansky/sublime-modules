@@ -1,0 +1,50 @@
+<snippet>
+	<content><![CDATA[
+.button {
+  width: 100%;
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  background: red;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  clear: both;
+  position: relative;
+  text-transform: none;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.button__text {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 3px;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  -webkit-border-radius: inherit;
+          border-radius: inherit;
+  font-weight: inherit;
+  text-shadow: inherit;
+  font-family: inherit;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  text-transform: inherit;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-button</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+.round
+	.round__inner
+		//-(класс для иконки, на этот блок цепляем стили иконок) .round__ico 
+		//-(класс для счетчика) .round__num
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-round</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.pug</scope>
+</snippet>

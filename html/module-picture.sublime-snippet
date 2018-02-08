@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<picture>
+	<!--[if IE 9]><video style="display: none;"><![endif]-->
+	<source srcset="img/prod.png" media="(max-width: 992px)">
+	<source srcset="img/desktop/prod.png">
+	<!--[if IE 9]></video><![endif]-->
+	<img srcset="img/prod.png">
+</picture>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-picture</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

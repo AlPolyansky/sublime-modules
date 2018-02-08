@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+module-button
+module-list
+module-round
+module-form
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>modules</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
