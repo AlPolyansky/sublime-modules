@@ -1,12 +1,10 @@
 <snippet>
 	<content><![CDATA[
-ul.list
+ul.list.list--skills
 	li.list__item
-		.list__grid
-			.list__part
-				//- Ваш контент в первой колонке
-			.list__part
-				//- Ваш контент во второй колонке
+		.grid.list__grid
+			.part.list__part 1
+			.part.list__part 2
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>module-list</tabTrigger>

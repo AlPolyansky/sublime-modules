@@ -1,118 +1,39 @@
 <snippet>
 	<content><![CDATA[
 .list{
-
-	// Настройки основного блока
-	
-	\$item-margin: 20px;		// Нижний отступ у элементов списка (елси none, не учитывается в css)
-
-
-	//=========== Настройки сетки =============//
-	// Данная настройка нужна, если используется библиотека ord.scss
-
-	\$container: 320px; 								// Ширина сетки в пикселях. (Нужна для расчета)
-
-
-	\$procent : true;										// Счетать колонки в процентах
-	\$first-col: 130px;									// Ширина первой колонки в пикселях
-	\$last-col: $container - \$first-col; // Ширина последней колонки в пикселях (Сейчас ширина считается атоматически)(колонка считается только в режиме procent : true).
-	\$table-fixed: true; 								// Фиксированная ширина столбцов
-	
-
-	// Первая колонка
-
-	\$first-col-padding: none;										// Внутренний отступ первой колонки (елси none, не учитывается в css)
-	\$first-col-v-align: none;										// Выравнивание внутри колонки (по умолчанию middle)
-
-	// Вторая колонка
-
-	\$last-col-padding: 5px 10px 5px 20px;				// Внутренний отступ последней колонки
-	\$last-col-v-align: none;										// Выравнивание внутри колонки (по умолчанию middle)
-
-	//=========== Настройки сетки =============//
-
-
-
-	//=========== Прочие =============//
-
-	\$reset-on : false;																	// Если есть класс %reset, то ставим true, если false, стили обнуляться классически
-
-
-	@if(\$reset-on){
-		@extend %reset;
-	}
-	@else{
-		padding: 0;
-		margin: 0;
-	}
-	
-	&__item{
-		@if(\$reset-on){
-			@extend %reset;
-		}
-		@else{
-			padding: 0;
-			margin: 0;
-			list-style: none;
-		}
-		@if(\$item-margin != none){
-			margin-bottom: \$item-margin;
-			&:last-of-type{
-				margin-bottom: 0;
-			}
-		}
-	}
-
-	&__grid{
-		@if(\$reset-on){
-			@extend %reset;
-		}
-		
-		display: table;
-		width: 100%;
-		@if(\$table-fixed){
-			table-layout: fixed;
-		} 
+	@extend %reset;
+	margin-bottom: 15px;
+	display: inline-block;
+	width: 100%;
+	max-width: 360px;
+	&:last-of-type{
+		margin-bottom: 0;
 	}
 
 	&__part{
-		@if(\$reset-on){
-			@extend %reset;
-		}
-		display: table-cell;
-		vertical-align: middle;
-		&:first-of-type{
-
-			@if(\$procent == true){
-				width: perc(\$first-col,\$container);
-			}
-			@else{
-				width: \$first-col;
-			}
-
-			@if(\$first-col-padding != none){
-				padding: \$first-col-padding;
-			}
-			@if(\$first-col-v-align != none){
-				vertical-align: \$first-col-v-align;
-			}
-		}
 		&:last-of-type{
-
-			@if(\$procent == true){
-				width: perc(\$last-col,\$container);
-			}
-
-			
-			@if(\$last-col-padding != none){
-				padding: \$last-col-padding;
-			}
-			@if(\$last-col-v-align != none){
-				vertical-align: \$last-col-v-align;
-			}
+			vertical-align: middle;
+		}
+	}
+	&__item{
+		@extend %reset;
+		margin-bottom: 15px;
+		&:last-of-type{
+			margin-bottom: 0;
 		}
 	}
 
+
+	&--skills{
+		.list__part{
+			&:first-of-type{
+				width: 40px;
+			}
+			&:last-of-type{
+				padding-left: 10px;
+			}
+		}
+	}
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
