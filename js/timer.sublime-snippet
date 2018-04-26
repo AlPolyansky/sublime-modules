@@ -1,0 +1,50 @@
+<snippet>
+	<content><![CDATA[
+var timer = function(){
+	var currentDate = new Date();
+	var count = 15;
+	var toDate = new Date(
+		currentDate.getFullYear(),
+		currentDate.getMonth(),
+		currentDate.getDate(),
+		currentDate.getHours(),
+		currentDate.getMinutes() + count, 1);
+
+	var parent =  \$('.timer');
+	var hours = parent.find('.timer__hours');
+	var mins = parent.find('.timer__min');
+	var seconds = parent.find('.timer__sec');
+
+
+	var hoursNum = hours.find('.timer__num');
+	var minNum = mins.find('.timer__num')
+	var secNum = seconds.find('.timer__num')
+
+
+	function renderNum(elem, str, e){
+		if(elem.length <= 1){
+			elem.text('' + e.strftime(str))
+		}else{
+			elem.eq(0).text('' + e.strftime(str)[0]);
+			elem.eq(1).text('' + e.strftime(str)[1]);
+		}
+	}
+
+	parent.countdown(toDate,function(e){
+		renderNum(hoursNum, '%H', e)
+		renderNum(minNum, '%M', e)
+		renderNum(secNum, '%S', e)
+	});
+
+};
+
+\$(function(){
+	timer();
+})
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-timer</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

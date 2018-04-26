@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+.timer
+  ul.timer__grid
+    li.timer__part
+      .timer__nums.timer__hours
+        .timer__num 0
+        .timer__num 0
+      span.timer__text hours
+    li.timer__part.timer__part-devider :
+    li.timer__part
+      .timer__nums.timer__min
+        .timer__num 1
+        .timer__num 5
+      span.timer__text minutes
+    li.timer__part.timer__part-devider :
+    li.timer__part
+      .timer__nums.timer__sec
+        .timer__num 0
+        .timer__num 0
+      span.timer__text seconds
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-timer</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.pug</scope>
+</snippet>
