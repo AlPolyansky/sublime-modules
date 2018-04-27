@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+.price
+  .price__item
+    del.price__old {{old_price}} {{currency}}
+  .price__item
+    span.price__new {{price}} {{currency}}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-price</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.pug</scope>
+</snippet>
