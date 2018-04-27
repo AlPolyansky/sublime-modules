@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.price__old {
+  text-decoration: none;
+  position: relative;
+}
+
+.price__old:before {
+  content: '';
+  color: #f33f33;
+  display: block;
+  position: absolute;
+  width: -webkit-calc(100% + 30px);
+  width: calc(100% + 30px);
+  height: 2px;
+  background-color: currentColor;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-16deg);
+      -ms-transform: translate(-50%, -50%) rotate(-16deg);
+          transform: translate(-50%, -50%) rotate(-16deg);
+}
+
+.price__new {
+  font-size: 1.625em;
+}
+
+.price__old, .price__new {
+  display: inline-block;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>module-price</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css</scope>
+</snippet>

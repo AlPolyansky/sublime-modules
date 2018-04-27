@@ -11,15 +11,6 @@ var timer = function(){
 		currentDate.getMinutes() + count, 1);
 
 	var parent =  \$('.timer');
-	var hours = parent.find('.timer__hours');
-	var mins = parent.find('.timer__min');
-	var seconds = parent.find('.timer__sec');
-
-
-	var hoursNum = hours.find('.timer__num');
-	var minNum = mins.find('.timer__num')
-	var secNum = seconds.find('.timer__num')
-
 
 	function renderNum(elem, str, e){
 		if(elem.length <= 1){
@@ -30,7 +21,17 @@ var timer = function(){
 		}
 	}
 
+
+
 	parent.countdown(toDate,function(e){
+		var \$this = \$(this);
+		var hours = \$this.find('.timer__hours');
+		var mins = \$this.find('.timer__min');
+		var seconds = \$this.find('.timer__sec');
+		var hoursNum = hours.find('.timer__num');
+		var minNum = mins.find('.timer__num');
+		var secNum = seconds.find('.timer__num');
+
 		renderNum(hoursNum, '%H', e)
 		renderNum(minNum, '%M', e)
 		renderNum(secNum, '%S', e)
